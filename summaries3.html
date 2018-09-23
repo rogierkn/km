@@ -16,13 +16,18 @@
 <h3>Logic</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 5 about (some aspects of) the topic of "Logic". Use between 100 and 200 words.
+Logic is a tool that is domain-independent. Multiple logic formalisms exist: Propositional, syllogisms, description, first-order, and higher-order. Notations used in these formalisms are often similar. There are certain trade-offs between formalisms — expressiveness versus complexity, and decidability versus efficiency.
+Syllogisms, introduced by Aristotle, were most used until the introduction of first-order logic. The syntax of first-order logic consists of terms, atomic formulas, and complex formulas. Syllogisms can be expressed in first-order logic. A logic statement can either be possible or impossible, and tautological or informative.
+Description logics is a subset of first-order logic, however, it does not use variables and it is decidable.
+Through logic certain actions become automatable: checking for consistency, answering questions, deduction, and reusing specifications. 
 </p>
 
 <h3>Ontologies</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 6 about (some aspects of) the topic of "Ontologies". Use between 100 and 200 words.
+
+Ontologies are useful in multiple ways. They can help us organise, be something we can recognise. Through ontologies concepts can be shared by defining formal descriptions. Ontologies can then help in communication, both for humans and machines. Domains used for ontologies can be of any size and define concepts differently. Class hierarchies can be organised vertically, in this there are lower-, basic-, and higher-levels. Lower-level is about the domain classes, basic-level about the middle layer, and higher-level about the abstract classes that organise the hierarchy.
+Common ontologies are FOAF — to describe people,  Dublin Core — to help resource discovery on the world wide web. The semantic web is made possible by using ontologies.
 </p>
 
 <h2>Literature</h2>
@@ -30,25 +35,43 @@ Replace this text with your summary of Lecture 6 about (some aspects of) the top
 <h3>Gensler 2010</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Gensler. Cite it as [Gensler 2010]. Use between 100 and 200 words.
+The concept of logic can be explained as the analysis and appraisal of arguments [Gensler 2010]. Logic allows to differ between good and bad reasoning and can help improve analytical skills. Logic contains premises and conclusions. Premises give information and conclusions draw from that information. Premises and conclusions together form an argument. Arguments can either be valid or invalid. Arguments can be considered valid when having true premises and a false conclusion would be contradictory. Arguments can also be sound when they have true premises and a true conclusion. Sound arguments are necessary when trying to prove certain conclusions. Thus, when trying to disprove an argument it is necessary to show it is not sound — either by showing that a premise is false or that the conclusion drawn is false.
+Finally, logic allows us to help reason clearly.
+
 </p>
 
 <h3>Odell 1994</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Odell. Cite it as [Odell 1994]. Use between 100 and 200 words.
+Composition is a method to create a new object by composing it from other objects. There are multiple kinds of composition that are separated by three properties — configuration, homeomerous, and invariance. With these properties the following compositions can be created:
+Component-integral object composition — through configuration of parts a whole is formed.
+Material-object composition — through an invariant configuration a whole is formed.
+Portion-object composition — parts of the configuration are the same as the whole.
+Place-area composition — similar to portion-object but the configuration is invariant.
+Member-bunch composition — the whole is formed by a collection of parts.
+Member-partnership composition — an invariant member-bunch composition.
+Relationships can be transitive: if A is related to B while B is also related to C, then A also relates to C. Compositions can be transitive if the relationship type of the composition is the same.
+Through transitivity actions can be propagated to that what makes up the composition.
 </p>
 
 <h3>Davis et al. 1993</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Davis. Cite it as [Davis et al. 1993]. Use between 100 and 200 words.
+Knowledge representation is best explained by describing five roles it functions as [Davis et al. 1993]. (1) Representation plays as a surrogate for entities that exist in the real world. (2) Representations are not perfect, they are approximations to reality — some parts are ignored. (3) Knowledge representation is a fragmented intelligent reasoning. The representation often only represents parts that motivated it. (4) Through knowledge representation computing becomes more efficient. Knowledge is stored in a way that allows for easier retrieval. (5) Knowledge representation is a way for humans to express their thoughts.
+These roles can be used in representing knowledge, even though they might cause competing demands in the desired characteristics in the representations.
 </p>
 
 <h3>Gruber 1995</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Gruben. Cite it as [Gruber 1995]. Use between 100 and 200 words.
+
+Knowledge sharing requires certain conventions: representation language format, agent communication protocol, and knowledge content specification [Gruber 1995]. Knowledge content specification can be achieved by using formal ontologies. Agents can use such an ontology to communicate about a domain without necessarily using the same theory. This is considered commitment to an ontology. Ontologies should adhere to certain design criteria:
+Clarity — communication of intention should be efficient.
+Coherence — all concepts that are defined should be coherent, along with the given axioms.
+Extendibility — an ontology should be extendable by building on the existing vocabulary.
+Minimal encoding bias — conceptualisation encoding at symbol-level should be avoided.
+Minimal ontological commitment — an ontology should only specify the minimum, parties should be free to specialise and use the ontology.
+These design criteria are meant for evaluation to effectively choose a good representation.
 </p>
 
 <h2>References</h2>
