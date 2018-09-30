@@ -16,13 +16,15 @@
 <h3>Controlled Natural Language</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 7 about (some aspects of) the topic of "Controlled Natural Language". Use between 100 and 200 words.
+Logic is the basis of some ontology languages. However, it can be hard to understand. Controlled natural language (CNL), a language based on another but more restricted in certain ways, can be more usable than logic by, for example, providing intuitive user interfaces. Examples of areas in which CNL are used are the Semantic Web and query interfaces. CNLs are located between natural languages and formal languages, and thus have advantages of both. Such as the expressiveness of natural languages but also the precision of formal languages.
+Attempto Controlled English (ACE) is an example of a CNL. It can be translated to first-order logic and is used in knowledge representation and in the semantic web. ACEWiki is a wiki that uses ACE to internally generate content into OWL.
+CNLs, however, also have disadvantages. Writing CNL can be hard as you cannot be sure that what is written is covered by the engine of the CNL. To combat this it is necessary that good tools for writing CNL are available.
 </p>
 
 <h3>Crowdsourcing for Knowledge Extraction</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 8 about (some aspects of) the topic of "Crowdsourcing for Knowledge Extraction". Use between 100 and 200 words.
+It is possible to use the wisdom of the crowd to solve problems. Marquis de Condorcet showed that the odds of a crowd picking the right answer is greater than the odds that one of the members of the crowd will pick the right answer on its own. The same concept can be applied to problems that are too hard to solve for computers. However, today’s problems often require more than one perspective. Experts are often good in their domain and could provide great knowledge about their domain, however, experts are expensive and not as readily available as a crowd of people. Problems with crowds on the other hand can be disagreement, however, this likely means that the problem is not laid out correctly. Disagreement thus is a signal and indicates that different humans differently interpret certain signs.
 </p>
 
 <h2>Literature</h2>
@@ -30,25 +32,28 @@ Replace this text with your summary of Lecture 8 about (some aspects of) the top
 <h3>Miller 1995</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Miller. Cite it as [Miller 1995]. Use between 100 and 200 words.
+A system can only process natural language if it has information about words and the meaning of those words [Miller 1995].  Dictionaries are a way to convey this information. However, dictionaries are optimised for humans. WordNet, a lexical database, provides information that is more fitting for machines. In it lexical concepts are made up of noun, verbs, adverbs, and adjectives. Then they are organised in synonym sets and those are then semantically related to others. The possible relations in WordNet are chosen so that anyone is able to understand them without any training. WordNet also tries to help combat Polysemy; a situation where a word or sentence can mean different things depending on the context. By giving more possible meanings, WordNet tries give the machines enough information to correctly identify the meaning in that context. The way humans distinguish these contexts is not yet well understood, thus it is hard to implement. A useful approach is to use topical contexts. This will help in limiting possible meanings that are retrieved. However, it is only correct around ⅘ of the time. WordNet is thus a continuous endeavour.
+
 </p>
 
 <h3>Kumar et al. 2013</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Kumar et al. Cite it as [Kumar et al. 2013]. Use between 100 and 200 words.
+The design of websites is changing due to data mining and knowledge discovery [Kumar et al. 2013]. Usually, web data mining covers 3 domains: text analysis, structure mining, and link analysis. Combined these cover the content of a page, however, the visual presentation is left out. Mining the visual presentation of pages—design mining—can be done using Webzeitgeist. Webzeitgeist is a large-scale store of mineable design data. Webzeitgeist enables multiple professions to answer certain questions relevant for them. Designers, for example, will be able to see what elements are used often. They can then design similar elements to create familiar interfaces for their users. Furthermore, Webzeitgeist enables metric learning, classification of elements, and design-based machine learning. It could perhaps lower the often experienced barrier in data-driven design applications, and help create new types of web design tools.
 </p>
 
 <h3>Horrocks 2008</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Horrocks. Cite it as [Horrocks 2008]. Use between 100 and 200 words.
+The web today is relatively simple in terms of usage, even though it is very large [Horrocks 2008]. This simplicity is both good and bad. Nearly anyone can use the web, but finding the right information can become hard when the query is not simple. This can be explained by that fact that much of the content on the web is intended to be consumed by humans, not machines. Most content is unstructured and can thus not be interpreted without previous knowledge. RDF is a way to annotate content and make it interpretable for machines. Internally RDF is a labeled directed graph and requires a subject, predicate, and object. It can then define relationships between them. An alternative to RDF is OWL. It builds upon RDF but provides more features, such as cardinalities. Even though it has been available for a while, many websites still do not use tools like OWL. However, such tools are becoming more prevalent in research and in larger IT projects where information is very important.
+
 </p>
 
 <h3>Heath and Bizer 2011</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Heath and Bizer. Cite it as [Heath and Bizer 2011]. Use between 100 and 200 words.
+Data is becoming more central in our lives and is used to make more decisions [Heath and Bizer 2011]. Many entities generating this data are sharing it with others who are then using that data to create new business and platforms. The web is likely the best place for discovering, accessing, integrating, and using this data.
+To re-use the data it is important that it is well structured. The data is currently often found in structured structures, like HTML, however, the data itself is most often general text without any structure. Microformats have been introduced to annotate the data. However, they are limited in expressing certain relations between data. Web APIs exposing data have been able able to express these relations, but they were not generic and thus required understanding of the API to actually use it properly. Linking the data becomes possible with RDF. RDF makes it possible to define relationships between things. Through RDF linked data it then becomes possible to discover more data, increasing discoverability on the web. Instead of data being locked into one place it is now global, enabling generic applications to use data from all over the web.
 </p>
 
 <h2>References</h2>
