@@ -16,13 +16,13 @@
 <h3>Knowledge Representation on the Web</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 9 about (some aspects of) the topic of "Knowledge Representation on the Web". Use between 100 and 200 words.
+The world wide web is an open, decentralised, and linked place. Anyone can join, nobody has global authority, and information is linked to other information anywhere on the web. It is a perfect place for knowledge representation, however, it also has issues. Concepts can be defined multiple times in different ways, quality of knowledge differs greatly. The knowledge can then be represented in multiple ways. On the Semantic Web RDF, SPARQL, and OWL are the core languages used for respectively triple structure, querying, and ontologies. OWL can be used with different syntaxes, for example the Manchester OWL syntax, which is very human-readable. Issues can arise, however, when uniqueness is assumed when Things are not unique. In OWL, and consequently RDF, uniqueness is not assumed and needs to be defined explicitly. This would not be an issue in a closed knowledge organisation system, as then unknown things can be assumed to be false. However, much systems are not closed and thus require more knowledge for correct definitions.
 </p>
 
-<h3>Knowledge Modeling</h3>
+<h3>Knowledge Modelling</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 10 about (some aspects of) the topic of "Knowledge Modeling". Use between 100 and 200 words.
+Knowledge modelling is about transforming the knowledge of people into a form that machines can process. It is a core task in information organisations. This knowledge needs to be categorised, of which there are three types: cultural, individual, and institutional. Institutional categorisation are created to reach certain goals and to achieve that the categorisation is very specific. Cultural categorisation encompasses the categories that are shared and used by a culture, and often also associated with one or more languages. Individual categorisation concerns when knowledge is categorised for one’s own use. Each type of categorisation can result in different models that put more focus on one or more attributes.
 </p>
 
 <h2>Literature</h2>
@@ -30,25 +30,34 @@ Replace this text with your summary of Lecture 10 about (some aspects of) the to
 <h3>Bizer et al. 2009</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Bizer et al. Cite it as [Bizer et al. 2009]. Use between 100 and 200 words.
+Knowledge bases (KB) are central in increasing the intelligence of both the Web and in enterprise search [Bizer et al. 2009]. However, most KBs are limited to a specific domain, maintained by small groups of experts. The DBpedia projects tries to counter this by leveraging Wikipedia’s content in a structured manner. Currently the DBpedia project consists of around 2.6 million entities describing around 274 million RDF triples. DBpedia tries to reflect Wikipedia’s new or updated content as quickly as possible. It achieves this by using the SQL dumps published by the Wikimedia Foundation, and streaming live updates.
+The knowledge on DBpedia is accessible in multiple ways. Browsers will receive an HTML view of the data, whereas Semantic Web agents will receive RDF descriptions. Furthermore, DBpedia is linked to other data sources that can enhance the knowledge it already has. 
+DBpedia shows that crowdsourced knowledge can be used to build a knowledge base, providing access to Wikipedia’s content in a structured manner.
+
 </p>
 
 <h3>Vrandecic and Krotzsch 2014</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Vrandecic and Krotzsch. Cite it as [Vrandecic and Krotzsch 2014]. Use between 100 and 200 words.
+Whereas Wikipedia is originally a text-based resource, another project from the Wikimedia foundation, Wikidata, is becoming the Wikipedia for data [Vrandecic and Krotzsch 2014]. Wikipedia already has around 30 million articles, however, these are hard to query. Thus, a new project is meant to alleviate this issue.
+Wikidata has several core ideas: (1) anyone can edit data. (2) Community driven in both data and form. (3) Conflicting data is possible. (4) Data comes from referenceable sources. (5) Data is multilingual. (6) Data is freely accessible in multiple formats. (7) Evolve the project continuously by adding new features.
+There are several challenges. For Wikidata to be multilingual its data that is identical but in different languages needs to reference the same internal data. Some data needs contextual information to provide more meaning, or allow the absence of an actual value for a property, which in itself is also a value.
+Even though Wikidata is still young, it can be a major resource in the development of new and existing applications, providing them with knowledge.
 </p>
 
 <h3>Beek et al. 2016</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Beek et al. Cite it as [Beek et al. 2016]. Use between 100 and 200 words.
+There are several issues with the Linked Open Data principle: (1) the Semantic Web is often not machine-processable. (2) It is not traversable by applications. (3) It is hard to gather information from multiple sources. (4) Although anyone can state anything, barely anything of it is used [Beek et al. 2016]. Proposed solutions are centralising the processing of linked data, not using SPARQL for accessing data, and dropping the requirement of dereferenceability of resources.
+By centrally processing linked data, many issues, such as incorrect syntax, can be alleviated. The LOD Laundromat does exactly that and in turn becomes a republishing platform for linked data. This also makes it easier to consume data as it provides access to many data documents in a consistent manner. Querying this data happens with an alternative to SPARQL that are able to support Web-wide querying, whereas in SPARQL the expressiveness of the least expressive data source dictates the expressiveness available in a query, limiting the potential.
+The LOD Laundromat, although centralised, could provide useful for growing the Semantic Web.
 </p>
 
 <h3>Schreiber et al. 2008</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Schreiber et al. Cite it as [Schreiber et al. 2008. Use between 100 and 200 words.
+MultimediaN E-Culture is a project created to show the potential of the Semantic Web. It tries to demonstrate the usefulness of ontologies in information retrieval in knowledge-rich domains [Schreiber et al. 2008]. The domain of cultural-heritage a domain that is very knowledge-rich. As a result there are many different vocabularies describing data. The project has three main elements: (1) Facilitate harvesting, enriching, and aligning the metadata and vocabularies of collections. (2) Providing semantic search including multiple formats of presentation. (3) Enable users to add or modify the data. 
+Several findings came forward from the project. Such as that a little semantics in data helps already with making it more accessible. Furthermore, search is an integral part of the project. Users currently search with keywords, as they are grown accustomed to it, however, in the future different types of search might be implemented. These different types will be possible due to the added semantics to the data. A challenge that remains unsolved is how user generated data should be handled, particularly due to the mixed quality and trust issues that can arise.
 </p>
 
 <h2>References</h2>
