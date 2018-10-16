@@ -16,13 +16,13 @@
 <h3>Semantic Fire Fighting</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 11 about (some aspects of) the topic of "Semantic Fire Fighting". Use between 100 and 200 words.
+Fire fighting is a tough problem. Issues can arise when trying to reach the location of fires, or dealing with complex situations at those locations. Fire fighters require a lot of information so they can make educated decisions in a short amount of time. An example of such information is information about buildings. A building model can be used for this. A building model contains many properties about the building that are easily accessed. When creating datasets with this information it can grow too large. This can be countered by linking data instead. Linked Data is suitable for this. However, different definitions of terms can make this hard, standards are thus required, a shared vocabulary in this case. Through this data it becomes possible to supply fire fighters with the correct information that they need at a certain moment. For example, a map to the location of a new fire. Fire fighters that have used such a system claimed it was useful. Next steps would be providing fire departments with more data, such as smart smoke detectors, to improve the chances fire fighters have.
 </p>
 
 <h3>Relations and Rules</h3>
 
 <p class="counter">
-Replace this text with your summary of Lecture 12 about (some aspects of) the topic of "Relations and Rules". Use between 100 and 200 words.
+Knowledge can be modelled as classes, which can extend other classes. These classes, however, can also have relations to each other, hierarchical relations. There are two kinds, generalisation and aggregation. The first one describes how a superclass is a more generic version of a certain class, while the second describes how a class is composed of other classes. Both have the structure of trees and transitivity. Issues can arise when trying to express things in OWL, as OWL has a limited expressiveness. It is, for example, not possible to have non-monotonic reasoning in OWL. However, this is possible in Answer Set Programming. ASP allows complex rules, but this means that it becomes harder to reason about it, something that is inherent to monotonicity.
 </p>
 
 <h2>Literature</h2>
@@ -30,13 +30,16 @@ Replace this text with your summary of Lecture 12 about (some aspects of) the to
 <h3>Moreau and Groth 2013</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Moreau and Groth. Cite it as [Moreau and Groth 2013]. Use between 100 and 200 words.
+The domain of data journalism is about the production of news based on digital information [Moreau and Groth 2013]. It is a good domain for provenance for multiple reasons: (1) information in this domain is often treated by many people. (2) The domain has a lot of manual and automated processes. Even the W3C has given this domain as an example of a domain with many use cases for provenance.
+By introducing provenance in data journalism certain tasks become easier. For example, if a news article, which has a publication embargo, is published early. When provenance is used in the process of creating to publishing the article, it becomes trivial to see who or what was responsible for the early publication. This is called the responsibility view. Another use case of provenance is showing how certain content is derived from other content, and how this derivation took place. By combining this data it becomes possible to have a complete overview of the actions performed in creating something, and who or what has touched it.
 </p>
 
 <h3>Janhunen and Nimelä 2016</h3>
 
 <p class="counter">
-Replace this text with your summary of (some aspects of) the paper by Janhunen and Nimelä. Cite it as [Janhunen and Nimelä 2016]. Use between 100 and 200 words.
+Answer set programming (ASP) is a declarative programming paradigm. It is mainly used to help in solving search problems [Janhunen and Nimelä 2016]. It is a paradigm that is becoming more popular due to better tooling that can help in solving practical problems. An example application of ASP are a decision support system for space shuttle controllers. 
+In ASP a problem statement is defined, however, this is a general problem statement without any data regarding the actual problem that needs solving. Then the rules and constraints should be programmed and the data of the specific problems. The answer sets can then be computed with the use of a grounder. This will either show a solution, or none if it is not possible with the provided data.
+ASP draws from other domains, such as logic programming, knowledge representation, and databases. However, these other domains then again also draw from ASP.
 </p>
 
 <h2>References</h2>
