@@ -12,7 +12,7 @@
 <h1>Knowledge and Media Overview</h1>
 
 <div id="authors">
-Your Name Here
+Rogier Knoester
 </div>
 
 
@@ -20,17 +20,251 @@ Your Name Here
 
 <p>Paste below all summaries of the lectures and papers from the weekly summaries (just the summary paragraphs; there is no need to copy their headings). Try to group them according to aspects of the course content that make most sense to you ("Formal Foundations", "User Interfaces", or "Changing Knowledge" are examples of such aspects). The references are already listed at the end of this document and don't need to be repeated. Remove these two paragraph before submission.</p>
 
-<h2>Aspect 1 (replace with own title)</h2>
+<h2>Defining Knowledge</h2>
 
-<p>...</p>
+<p>
+	Knowledge organisation systems (KOS) are systems that are designed to store and later on present knowledge. An offline example of a KOS is a library, whereas the digital equivalent would be wikipedia. The knowledge stored in a KOS can be represented through multiple types of media, examples of which are natural language texts, diagrams, or sound. Knowledge in a system can be seen as a resource, something that can help achieve a goal. It is important that these resources are stored in an organised matter so that they can be retrieved rather easily. The resources should be stored in a KOS whenever they are created, further modifications should update the resource so that the resource always represents its most up to date state. The organisation of a KOS has to be considered as different groups or people represent knowledge in different ways. This means that if a domain expert add the knowledge, someone else might not be able to correctly interpret the knowledge. The representation of the knowledge, and the medium used, should ultimately depend on the end user so that they can easily interact with the knowledge.
+</p>
+<br/>
+<p>
+	Knowledge representation is best explained by describing five roles it functions as [Davis et al. 1993]. (1) Representation plays as a surrogate for entities that exist in the real world. (2) Representations are not perfect, they are approximations to reality — some parts are ignored. (3) Knowledge representation is a fragmented intelligent reasoning. The representation often only represents parts that motivated it. (4) Through knowledge representation computing becomes more efficient. Knowledge is stored in a way that allows for easier retrieval. (5) Knowledge representation is a way for humans to express their thoughts.
+	These roles can be used in representing knowledge, even though they might cause competing demands in the desired characteristics in the representations.
+</p>
 
-<h2>Aspect 2 (replace with own title)</h2>
 
-<p>...</p>
 
-<h2>Aspect ... (replace with own title; add more aspect sections if needed)</h2>
 
-<p>...</p>
+<h2>Gathering Knowledge</h2>
+
+<p>
+	A system can only process natural language if it has information about words and the meaning of those words [Miller 1995].  Dictionaries are a way to convey this information. However, dictionaries are optimised for humans. WordNet, a lexical database, provides information that is more fitting for machines. In it lexical concepts are made up of noun, verbs, adverbs, and adjectives. Then they are organised in synonym sets and those are then semantically related to others. The possible relations in WordNet are chosen so that anyone is able to understand them without any training. WordNet also tries to help combat Polysemy; a situation where a word or sentence can mean different things depending on the context. By giving more possible meanings, WordNet tries give the machines enough information to correctly identify the meaning in that context. The way humans distinguish these contexts is not yet well understood, thus it is hard to implement. A useful approach is to use topical contexts. This will help in limiting possible meanings that are retrieved. However, it is only correct around ⅘ of the time. WordNet is thus a continuous endeavour.
+</p>
+
+<br/>
+
+<p>
+	It is possible to use the wisdom of the crowd to solve problems. Marquis de Condorcet showed that the odds of a crowd picking the right answer is greater than the odds that one of the members of the crowd will pick the right answer on its own. The same concept can be applied to problems that are too hard to solve for computers. However, today’s problems often require more than one perspective. Experts are often good in their domain and could provide great knowledge about their domain, however, experts are expensive and not as readily available as a crowd of people. Problems with crowds on the other hand can be disagreement, however, this likely means that the problem is not laid out correctly. Disagreement thus is a signal and indicates that different humans differently interpret certain signs.
+</p>
+
+<br/>
+
+<p>
+	Knowledge modelling is about transforming the knowledge of people into a form that machines can process. It is a core task in information organisations. This knowledge needs to be categorised, of which there are three types: cultural, individual, and institutional. Institutional categorisation are created to reach certain goals and to achieve that the categorisation is very specific. Cultural categorisation encompasses the categories that are shared and used by a culture, and often also associated with one or more languages. Individual categorisation concerns when knowledge is categorised for one’s own use. Each type of categorisation can result in different models that put more focus on one or more attributes.
+</p>
+
+<br/>
+
+<p>
+	Knowledge can be modelled as classes, which can extend other classes. These classes, however, can also have relations to each other, hierarchical relations. There are two kinds, generalisation and aggregation. The first one describes how a superclass is a more generic version of a certain class, while the second describes how a class is composed of other classes. Both have the structure of trees and transitivity. Issues can arise when trying to express things in OWL, as OWL has a limited expressiveness. It is, for example, not possible to have non-monotonic reasoning in OWL. However, this is possible in Answer Set Programming. ASP allows complex rules, but this means that it becomes harder to reason about it, something that is inherent to monotonicity.
+</p>
+
+<br/>
+
+<p>
+	When a model or system is created it is necessary to evaluate this model to make sure it is correct. There are multiple types of evaluations that can be done. For example, it is possible to evaluate the syntax of a model, the semantic consistency, and the results that a model produces. Another type is principled inspection with the OntoClean methodology. Through this methodology meta-properties are added to classes which are then used to create a backbone hierarchy which can be used to identify inconsistencies. <br/>
+	Systems can also be evaluated, for example the performance, user experience, or the understandability of knowledge. These can be evaluated through questionnaires, controlled task experiments, but also observations of users using the system.<br/>
+	What remains important is that evaluations are done on one aspect per evaluation and that they are done carefully.
+</p>
+
+<h2>Why knowledge representation is useful</h2>
+
+<p>
+	Non profit organisations (NPOs) often have a volunteer coordinator managing the volunteers. A great diversity of information needs to be stored and retrievable by these coordinators and other stakeholders. This is often inefficiently achieved by creating ‘homebrew’ databases, applications that are overloaded to accommodate more than what they were designed for [Voida et al. 2011]. More efficient solutions are often not available due to lack of technical expertise of the coordinators as they experts the domain of the NPO. Constantly changing information requirements also make it hard to design proper systems that can generate clear reports. Furthermore, information management does not have a high priority for many coordinators, it is considered overhead. Paper is also still a pervasive information management tool within NPOs as it is often a single source, unlike digital files that are copied regularly. Paper however does not scale with the needs of the NPO [Voida et al. 2011].<br/>
+	Introducing more human-centered databases, and import  export standards could help making proper solutions more widespread within NPOs as it would reduce the currently experienced overhead and allow for more fluidity in the data used in the NPO.
+</p>
+
+<br/>
+
+<p>
+	Often end-users have a hard time to publish information in the same manner as found on professional websites [Benson and Karger 2014]. Exhibit tries to fill this niche. Exhibit tries to provide easy access but also support power users by using the star model. Analysis is done on the use of Exhibit by interviewing its users and analysing the created Exhibits. Not many of the interviewed had prior experience in data visualisation. Reasons they use Exhibit were: possibility of navigating through data, the ability to publish data without programming, ability to provide understanding of the presented data, and frustrations that came from normal web development. Much of the used data was created in tools such as Excel like tools, even if the data was not in a tabular format. The data was then often copied into existing visualisations. Concluded was that they understand complex data models, but are unable to use proper editors for that, in result they abuse the spreadsheet format for that data. Visualisations are often hard to integrate in the CMSs used. Finally, the star model allows non-trained people to still create data-rich visualisations.
+</p>
+
+<br/>
+
+<p>
+	Currently there is a lot of attention for the machine learning and statistical algorithms parts of artificial intelligence (AI), in the 1990s the focus was more on logic-based AI portrayed as Knowledge Representation (KR). Shoham [Shoham 2015] argues that there is too much focus on the former, which is done through a personal story. The story portrays the issue of time management, an issue that has been prevalent for many years. Shoham theorises and designs an application, that is based on the AGM framework, that helps intelligently plan intentions. Intentions can be everyday things such as events, meetings, plans to exercise etc., they have (temporal) attributes that specify constraints. Intentions are the core of the system, the objects algorithms use to intelligently plan. Shoham states that they are a form of KR in the system. Furthermore, Shoham explains how philosophical literature has helped with certain product design decisions. Finally, it is concluded that KR has played a definite role in reaching the current system. However, it is not impossible to think that without KR the same system would have been created.
+</p>
+
+
+<h2>Resources in knowledge representation</h2>
+
+<p>
+	When the need arises to organise resources it becomes required that the resources are describable. It then becomes possible to search for resources, distinguish them and provide access. The describing of resources is done through its properties, e.g. a unique identifier. Properties can either be intrinsic or extrinsic, and dynamic and static. These properties can be used to categorise resources. The process of categorisation is done in a principled way for the best results, however it is nearly always biased and subjective.<br/>
+	Tagging is another way to categorise resources, however it is often not principled and done loosely and often also only describes parts of what the resource is about.<br/>
+	Through categorisation it becomes possible to use resources in computer systems. Logic and ontologies help in making resources interpretable for computers. It becomes possible to introduce relations between resources, and rules, extending the usability of the resources. 
+</p>
+
+<br/>
+
+<p>
+	The concept of logic can be explained as the analysis and appraisal of arguments [Gensler 2010]. Logic allows to differ between good and bad reasoning and can help improve analytical skills. Logic contains premises and conclusions. Premises give information and conclusions draw from that information. Premises and conclusions together form an argument. Arguments can either be valid or invalid. Arguments can be considered valid when having true premises and a false conclusion would be contradictory. Arguments can also be sound when they have true premises and a true conclusion. Sound arguments are necessary when trying to prove certain conclusions. Thus, when trying to disprove an argument it is necessary to show it is not sound — either by showing that a premise is false or that the conclusion drawn is false. Finally, logic allows us to help reason clearly.
+</p>
+
+<br/>
+
+<p>
+	Logic is a tool that is domain-independent. Multiple logic formalisms exist: Propositional, syllogisms, description, first-order, and higher-order. Notations used in these formalisms are often similar. There are certain trade-offs between formalisms — expressiveness versus complexity, and decidability versus efficiency. <br/>
+	Syllogisms, introduced by Aristotle, were most used until the introduction of first-order logic. The syntax of first-order logic consists of terms, atomic formulas, and complex formulas. Syllogisms can be expressed in first-order logic. A logic statement can either be possible or impossible, and tautological or informative. <br/>
+	Description logics is a subset of first-order logic, however, it does not use variables and it is decidable.<br/>
+	Through logic certain actions become automatable: checking for consistency, answering questions, deduction, and reusing specifications. 
+</p>
+
+<br/>
+
+<p>
+	Answer set programming (ASP) is a declarative programming paradigm. It is mainly used to help in solving search problems [Janhunen and Nimelä 2016]. It is a paradigm that is becoming more popular due to better tooling that can help in solving practical problems. An example application of ASP are a decision support system for space shuttle controllers. <br/>
+	In ASP a problem statement is defined, however, this is a general problem statement without any data regarding the actual problem that needs solving. Then the rules and constraints should be programmed and the data of the specific problems. The answer sets can then be computed with the use of a grounder. This will either show a solution, or none if it is not possible with the provided data.<br/>
+	ASP draws from other domains, such as logic programming, knowledge representation, and databases. However, these other domains then again also draw from ASP.
+</p>
+
+<br/>
+
+<p>
+	Ontologies are useful in multiple ways. They can help us organise, be something we can recognise. Through ontologies concepts can be shared by defining formal descriptions. Ontologies can then help in communication, both for humans and machines. Domains used for ontologies can be of any size and define concepts differently. Class hierarchies can be organised vertically, in this there are lower-, basic-, and higher-levels. Lower-level is about the domain classes, basic-level about the middle layer, and higher-level about the abstract classes that organise the hierarchy. <br/>
+	Common ontologies are FOAF — to describe people, Dublin Core — to help resource discovery on the world wide web. The semantic web is made possible by using ontologies.
+</p>
+
+<br/>
+
+<p>
+	The domain of data journalism is about the production of news based on digital information [Moreau and Groth 2013]. It is a good domain for provenance for multiple reasons: (1) information in this domain is often treated by many people. (2) The domain has a lot of manual and automated processes. Even the W3C has given this domain as an example of a domain with many use cases for provenance. <br/>
+	By introducing provenance in data journalism certain tasks become easier. For example, if a news article, which has a publication embargo, is published early. When provenance is used in the process of creating to publishing the article, it becomes trivial to see who or what was responsible for the early publication. This is called the responsibility view. Another use case of provenance is showing how certain content is derived from other content, and how this derivation took place. By combining this data it becomes possible to have a complete overview of the actions performed in creating something, and who or what has touched it.
+</p>
+
+<br/>
+
+<p>
+	Composition is a method to create a new object by composing it from other objects. There are multiple kinds of composition that are separated by three properties — configuration, homeomerous, and invariance. With these properties the following compositions can be created:
+	Component-integral object composition — through configuration of parts a whole is formed.<br/>
+	Material-object composition — through an invariant configuration a whole is formed.<br/>
+	Portion-object composition — parts of the configuration are the same as the whole.<br/>
+	Place-area composition — similar to portion-object but the configuration is invariant.<br/>
+	Member-bunch composition — the whole is formed by a collection of parts.<br/>
+	Member-partnership composition — an invariant member-bunch composition.<br/>
+	Relationships can be transitive: if A is related to B while B is also related to C, then A also relates to C. Compositions can be transitive if the relationship type of the composition is the same. Through transitivity actions can be propagated to that what makes up the composition.
+</p>
+
+<br/>
+
+<p>
+	Logic is the basis of some ontology languages. However, it can be hard to understand. Controlled natural language (CNL), a language based on another but more restricted in certain ways, can be more usable than logic by, for example, providing intuitive user interfaces. Examples of areas in which CNL are used are the Semantic Web and query interfaces. CNLs are located between natural languages and formal languages, and thus have advantages of both. Such as the expressiveness of natural languages but also the precision of formal languages. <br/>
+	Attempto Controlled English (ACE) is an example of a CNL. It can be translated to first-order logic and is used in knowledge representation and in the semantic web. ACEWiki is a wiki that uses ACE to internally generate content into OWL.<br/>
+	CNLs, however, also have disadvantages. Writing CNL can be hard as you cannot be sure that what is written is covered by the engine of the CNL. To combat this it is necessary that good tools for writing CNL are available.
+</p>
+
+<br/>
+
+<p>
+	Knowledge sharing requires certain conventions: representation language format, agent communication protocol, and knowledge content specification [Gruber 1995]. Knowledge content specification can be achieved by using formal ontologies. Agents can use such an ontology to communicate about a domain without necessarily using the same theory. This is considered commitment to an ontology. Ontologies should adhere to certain design criteria:
+	Clarity — communication of intention should be efficient.<br/>
+	Coherence — all concepts that are defined should be coherent, along with the given axioms.<br/>
+	Extendibility — an ontology should be extendable by building on the existing vocabulary.<br/>
+	Minimal encoding bias — conceptualisation encoding at symbol-level should be avoided.<br/>
+	Minimal ontological commitment — an ontology should only specify the minimum, parties should be free to specialise and use the ontology.<br/>
+	These design criteria are meant for evaluation to effectively choose a good representation.
+</p>
+
+
+
+<h2>The Semantic Web</h2>
+
+<p>
+	The web today consists mostly of content that is only human readable and not easily interpretable for machines [Berners-Lee et al, 2001]. The Semantic Web is supposed to change that. Software agents will be able to read data and add meaning to said data, turning it into usable information. The Semantic Web is extending the current World Wide Web. It is required that agents have structured access to the necessary information, this can be achieved through Knowledge Representation Systems. However, these systems often are centralised, whereas it is necessary for the Semantic Web that information is distributed. XML and RDF are ways to express semantics on the web, and can link to unique objects with Universal Resource Identifiers. Challenges remaining are rules about the interpreting data. Two things might be the same but presented in different formats.<br/>
+	The Semantic Web becomes most useful when software agents will be able to exchange the information and discover each other independently. Finally, the Semantic Web might enter the physical realm, pointing and interacting with objects in this realm.
+</p>
+
+<br/>
+
+<p>
+	Traditionally search results have consisted of small pieces of text and blue links [Haas et al. 2011]. However, the concept of enhanced search results is researched by Haas et al., and whether enhanced search results are something that is preferred by users. In the research, enhanced search results are generated by using and interpreting structured data. An a/b-test evaluation is performed in which the preference of users is analysed by measuring the click-through-rate (CTR). The results show that in the enhanced search results the CTR was on average 15% higher. It is also noted that even though the availability of structured data is low, most search results can be enhanced by at least one type of enhancement (video, reference, product, etc.). Furthermore, the presence of enhancements helps guide users to relevant results.
+</p>
+
+<br/>
+
+<p>
+	Traditionally content on the web was not published structurally. Structured content is becoming more prevalent on the web. It allows for more interactive systems. An application that boosted the use of structured data greatly is text search. In 2011, search engines together created Schema.org, a single vocabulary that can be used by websites to present their data in a structured manner. A sample of 10 billion webpages showed that 31.3% have adopted the Schema.org vocabulary to present structured data [Guha et al. 2016]. It should be noted that there are other formats besides Schema.org, but their vocabularies are limited.<br/>
+	Schema.org was designed to make it easier for websites to present data at the cost that consumers of the data have it slightly harder. Schema.org's adoption can be attributed to this strategy. The vocabulary can also be extended, which is regularly done by communities working together to document new terms. Some of these vocabularies might be integrated into the core vocabulary. With this Schema.org tries to be as open as possible so that many stakeholders can participate in the evolvement of the vocabulary.
+</p>
+
+<br/>
+
+<p>
+	The web today is relatively simple in terms of usage, even though it is very large [Horrocks 2008]. This simplicity is both good and bad. Nearly anyone can use the web, but finding the right information can become hard when the query is not simple. This can be explained by that fact that much of the content on the web is intended to be consumed by humans, not machines. Most content is unstructured and can thus not be interpreted without previous knowledge. RDF is a way to annotate content and make it interpretable for machines. Internally RDF is a labeled directed graph and requires a subject, predicate, and object. It can then define relationships between them. An alternative to RDF is OWL. It builds upon RDF but provides more features, such as cardinalities. Even though it has been available for a while, many websites still do not use tools like OWL. However, such tools are becoming more prevalent in research and in larger IT projects where information is very important.
+</p>
+
+<br/>
+
+<p>
+	The world wide web is an open, decentralised, and linked place. Anyone can join, nobody has global authority, and information is linked to other information anywhere on the web. It is a perfect place for knowledge representation, however, it also has issues. Concepts can be defined multiple times in different ways, quality of knowledge differs greatly. The knowledge can then be represented in multiple ways. On the Semantic Web RDF, SPARQL, and OWL are the core languages used for respectively triple structure, querying, and ontologies. OWL can be used with different syntaxes, for example the Manchester OWL syntax, which is very human-readable. Issues can arise, however, when uniqueness is assumed when Things are not unique. In OWL, and consequently RDF, uniqueness is not assumed and needs to be defined explicitly. This would not be an issue in a closed knowledge organisation system, as then unknown things can be assumed to be false. However, much systems are not closed and thus require more knowledge for correct definitions.
+</p>
+
+<br/>
+
+<p>
+	Data is becoming more central in our lives and is used to make more decisions [Heath and Bizer 2011]. Many entities generating this data are sharing it with others who are then using that data to create new business and platforms. The web is likely the best place for discovering, accessing, integrating, and using this data. To re-use the data it is important that it is well structured. The data is currently often found in structured structures, like HTML, however, the data itself is most often general text without any structure. Microformats have been introduced to annotate the data. However, they are limited in expressing certain relations between data. Web APIs exposing data have been able able to express these relations, but they were not generic and thus required understanding of the API to actually use it properly. Linking the data becomes possible with RDF. RDF makes it possible to define relationships between things. Through RDF linked data it then becomes possible to discover more data, increasing discoverability on the web. Instead of data being locked into one place it is now global, enabling generic applications to use data from all over the web.
+</p>
+
+<br/>
+
+<p>
+	There are several issues with the Linked Open Data principle: (1) the Semantic Web is often not machine-processable. (2) It is not traversable by applications. (3) It is hard to gather information from multiple sources. (4) Although anyone can state anything, barely anything of it is used [Beek et al. 2016]. Proposed solutions are centralising the processing of linked data, not using SPARQL for accessing data, and dropping the requirement of dereferenceability of resources.<br/>
+	By centrally processing linked data, many issues, such as incorrect syntax, can be alleviated. The LOD Laundromat does exactly that and in turn becomes a republishing platform for linked data. This also makes it easier to consume data as it provides access to many data documents in a consistent manner. Querying this data happens with an alternative to SPARQL that are able to support Web-wide querying, whereas in SPARQL the expressiveness of the least expressive data source dictates the expressiveness available in a query, limiting the potential.<br/>
+	The LOD Laundromat, although centralised, could provide useful for growing the Semantic Web.
+</p>
+
+
+<br/>
+
+<h2>KR and Semantic Web projects</h2>
+
+<h4>Producing linked data</h4> 
+
+<p>
+	The design of websites is changing due to data mining and knowledge discovery [Kumar et al. 2013]. Usually, web data mining covers 3 domains: text analysis, structure mining, and link analysis. Combined these cover the content of a page, however, the visual presentation is left out. Mining the visual presentation of pages—design mining—can be done using Webzeitgeist. Webzeitgeist is a large-scale store of mineable design data. Webzeitgeist enables multiple professions to answer certain questions relevant for them. Designers, for example, will be able to see what elements are used often. They can then design similar elements to create familiar interfaces for their users. Furthermore, Webzeitgeist enables metric learning, classification of elements, and design-based machine learning. It could perhaps lower the often experienced barrier in data-driven design applications, and help create new types of web design tools.
+</p>	
+
+<br/>
+
+<p>
+	Knowledge bases (KB) are central in increasing the intelligence of both the Web and in enterprise search [Bizer et al. 2009]. However, most KBs are limited to a specific domain, maintained by small groups of experts. The DBpedia projects tries to counter this by leveraging Wikipedia’s content in a structured manner. Currently the DBpedia project consists of around 2.6 million entities describing around 274 million RDF triples. DBpedia tries to reflect Wikipedia’s new or updated content as quickly as possible. It achieves this by using the SQL dumps published by the Wikimedia Foundation, and streaming live updates. <br/>
+	The knowledge on DBpedia is accessible in multiple ways. Browsers will receive an HTML view of the data, whereas Semantic Web agents will receive RDF descriptions. Furthermore, DBpedia is linked to other data sources that can enhance the knowledge it already has. <br/>
+	DBpedia shows that crowdsourced knowledge can be used to build a knowledge base, providing access to Wikipedia’s content in a structured manner.
+</p>
+
+<br/>
+
+<p>
+	Whereas Wikipedia is originally a text-based resource, another project from the Wikimedia foundation, Wikidata, is becoming the Wikipedia for data [Vrandecic and Krotzsch 2014]. Wikipedia already has around 30 million articles, however, these are hard to query. Thus, a new project is meant to alleviate this issue. <br/>
+	Wikidata has several core ideas: (1) anyone can edit data. (2) Community driven in both data and form. (3) Conflicting data is possible. (4) Data comes from referenceable sources. (5) Data is multilingual. (6) Data is freely accessible in multiple formats. (7) Evolve the project continuously by adding new features. <br/>
+	There are several challenges. For Wikidata to be multilingual its data that is identical but in different languages needs to reference the same internal data. Some data needs contextual information to provide more meaning, or allow the absence of an actual value for a property, which in itself is also a value. <br/>
+	Even though Wikidata is still young, it can be a major resource in the development of new and existing applications, providing them with knowledge.
+</p>
+
+<br/>
+
+<p>
+	The Netherlands institute for sound and vision is an organisation that archives audio and video. This is then accessible for individuals but also other organisations. It is busy digitalising old material that is still analogue. A R&D department within is busy researching how to work smarter, connect better and be more open. They try to be more open by giving access to many of its content for free.<br/>
+	Working smarter is achieved by adding correct metadata to object. This used to be done manually but now other methods are tried. Such methods are image recognition and speech recognition, but also through crowdsourcing.<br/>
+	Connecting better is achieved by creating links between resources, both internal resources and external resources. For example, linking internal actors to the Wikidata resources, but also to the resources of other similar institutes. For this they use a shared vocabulary.<br/>
+	Through all this they hope to create new opportunities in creating, curation, consuming and analysing media.
+</p>
+
+<h4>Consuming linked data</h4>
+
+<p>
+	Fire fighting is a tough problem. Issues can arise when trying to reach the location of fires, or dealing with complex situations at those locations. Fire fighters require a lot of information so they can make educated decisions in a short amount of time. An example of such information is information about buildings. A building model can be used for this. A building model contains many properties about the building that are easily accessed. When creating datasets with this information it can grow too large. This can be countered by linking data instead. Linked Data is suitable for this. However, different definitions of terms can make this hard, standards are thus required, a shared vocabulary in this case. Through this data it becomes possible to supply fire fighters with the correct information that they need at a certain moment. For example, a map to the location of a new fire. Fire fighters that have used such a system claimed it was useful. Next steps would be providing fire departments with more data, such as smart smoke detectors, to improve the chances fire fighters have.
+</p>
+
+<br/>
+
+<p>
+	MultimediaN E-Culture is a project created to show the potential of the Semantic Web. It tries to demonstrate the usefulness of ontologies in information retrieval in knowledge-rich domains [Schreiber et al. 2008]. The domain of cultural-heritage a domain that is very knowledge-rich. As a result there are many different vocabularies describing data. The project has three main elements: (1) Facilitate harvesting, enriching, and aligning the metadata and vocabularies of collections. (2) Providing semantic search including multiple formats of presentation. (3) Enable users to add or modify the data. <br/>
+	Several findings came forward from the project. Such as that a little semantics in data helps already with making it more accessible. Furthermore, search is an integral part of the project. Users currently search with keywords, as they are grown accustomed to it, however, in the future different types of search might be implemented. These different types will be possible due to the added semantics to the data. A challenge that remains unsolved is how user generated data should be handled, particularly due to the mixed quality and trust issues that can arise.
+</p>
+
+
+
+
 
 
 <h2>References</h2>
