@@ -15,11 +15,6 @@
 Rogier Knoester
 </div>
 
-
-<p>This document combines all the summaries you wrote throughout the course about the lecture topics (14 summaries) and papers (20 summaries). Optionally, you may also include content from your flash presentation, tool screenshots, poster, and short paper. You can use the style and structure indicated below, or you can be creative and come up with your own structure and style. Just make sure that all summaries are there.</p>
-
-<p>Paste below all summaries of the lectures and papers from the weekly summaries (just the summary paragraphs; there is no need to copy their headings). Try to group them according to aspects of the course content that make most sense to you ("Formal Foundations", "User Interfaces", or "Changing Knowledge" are examples of such aspects). The references are already listed at the end of this document and don't need to be repeated. Remove these two paragraph before submission.</p>
-
 <h2>Defining Knowledge</h2>
 
 <p>
@@ -37,13 +32,30 @@ Rogier Knoester
 <h2>Gathering Knowledge</h2>
 
 <p>
+	Before knowledge can be represented it is necessary to gather it, there are various methods to do this, for example, processing natural language content.
+</p>
+<br/>
+
+<p>
 	A system can only process natural language if it has information about words and the meaning of those words [Miller 1995].  Dictionaries are a way to convey this information. However, dictionaries are optimised for humans. WordNet, a lexical database, provides information that is more fitting for machines. In it lexical concepts are made up of noun, verbs, adverbs, and adjectives. Then they are organised in synonym sets and those are then semantically related to others. The possible relations in WordNet are chosen so that anyone is able to understand them without any training. WordNet also tries to help combat Polysemy; a situation where a word or sentence can mean different things depending on the context. By giving more possible meanings, WordNet tries give the machines enough information to correctly identify the meaning in that context. The way humans distinguish these contexts is not yet well understood, thus it is hard to implement. A useful approach is to use topical contexts. This will help in limiting possible meanings that are retrieved. However, it is only correct around ⅘ of the time. WordNet is thus a continuous endeavour.
 </p>
 
 <br/>
 
 <p>
+	When knowledge is gathered it is not necessarily truthful knowledge. It might be biased because the creator of the knowledge has a use case for spreading certain knowledge. However, there are methods to gather truthful knowledge more confidently.
+</p>
+
+<br/>
+
+<p>
 	It is possible to use the wisdom of the crowd to solve problems. Marquis de Condorcet showed that the odds of a crowd picking the right answer is greater than the odds that one of the members of the crowd will pick the right answer on its own. The same concept can be applied to problems that are too hard to solve for computers. However, today’s problems often require more than one perspective. Experts are often good in their domain and could provide great knowledge about their domain, however, experts are expensive and not as readily available as a crowd of people. Problems with crowds on the other hand can be disagreement, however, this likely means that the problem is not laid out correctly. Disagreement thus is a signal and indicates that different humans differently interpret certain signs.
+</p>
+
+<br/>
+
+<p>
+	When knowledge is deemed truthful and thus usable for knowledge representation it is still in a format that machines cannot process. It should be transformed into a format that is understandable.
 </p>
 
 <br/>
@@ -69,8 +81,14 @@ Rogier Knoester
 <h2>Why knowledge representation is useful</h2>
 
 <p>
+	Knowledge representation and the tools around it have certain use cases, some more tangible than others. This section describes some of them.
+</p>
+
+<br/>
+
+<p>
 	Non profit organisations (NPOs) often have a volunteer coordinator managing the volunteers. A great diversity of information needs to be stored and retrievable by these coordinators and other stakeholders. This is often inefficiently achieved by creating ‘homebrew’ databases, applications that are overloaded to accommodate more than what they were designed for [Voida et al. 2011]. More efficient solutions are often not available due to lack of technical expertise of the coordinators as they experts the domain of the NPO. Constantly changing information requirements also make it hard to design proper systems that can generate clear reports. Furthermore, information management does not have a high priority for many coordinators, it is considered overhead. Paper is also still a pervasive information management tool within NPOs as it is often a single source, unlike digital files that are copied regularly. Paper however does not scale with the needs of the NPO [Voida et al. 2011].<br/>
-	Introducing more human-centered databases, and import  export standards could help making proper solutions more widespread within NPOs as it would reduce the currently experienced overhead and allow for more fluidity in the data used in the NPO.
+	Introducing more human-centered databases, and import &amp; export standards could help making proper solutions more widespread within NPOs as it would reduce the currently experienced overhead and allow for more fluidity in the data used in the NPO.
 </p>
 
 <br/>
@@ -112,9 +130,21 @@ Rogier Knoester
 <br/>
 
 <p>
+	Answer set programming shows how the domain of logic can be used for problem solving.
+</p>
+
+<br/>
+
+<p>
 	Answer set programming (ASP) is a declarative programming paradigm. It is mainly used to help in solving search problems [Janhunen and Nimelä 2016]. It is a paradigm that is becoming more popular due to better tooling that can help in solving practical problems. An example application of ASP are a decision support system for space shuttle controllers. <br/>
 	In ASP a problem statement is defined, however, this is a general problem statement without any data regarding the actual problem that needs solving. Then the rules and constraints should be programmed and the data of the specific problems. The answer sets can then be computed with the use of a grounder. This will either show a solution, or none if it is not possible with the provided data.<br/>
 	ASP draws from other domains, such as logic programming, knowledge representation, and databases. However, these other domains then again also draw from ASP.
+</p>
+
+<br/>
+
+<p>
+	Once resources are defined they can be used to build ontologies and the relations between these resources.
 </p>
 
 <br/>
@@ -127,8 +157,20 @@ Rogier Knoester
 <br/>
 
 <p>
+	An example of a good ontology is the PROV ontology. This ontology can establish provenance in certain domains, for example in data journalism.
+</p>
+
+<br/>
+
+<p>
 	The domain of data journalism is about the production of news based on digital information [Moreau and Groth 2013]. It is a good domain for provenance for multiple reasons: (1) information in this domain is often treated by many people. (2) The domain has a lot of manual and automated processes. Even the W3C has given this domain as an example of a domain with many use cases for provenance. <br/>
 	By introducing provenance in data journalism certain tasks become easier. For example, if a news article, which has a publication embargo, is published early. When provenance is used in the process of creating to publishing the article, it becomes trivial to see who or what was responsible for the early publication. This is called the responsibility view. Another use case of provenance is showing how certain content is derived from other content, and how this derivation took place. By combining this data it becomes possible to have a complete overview of the actions performed in creating something, and who or what has touched it.
+</p>
+
+<br/>
+
+<p>
+	Where ontologies are higher level concept, the concepts it brings forth are directly usable in programming. For example, the composition of classes.
 </p>
 
 <br/>
@@ -155,6 +197,12 @@ Rogier Knoester
 <br/>
 
 <p>
+	To bring knowledge representation to the next level it is necessary to be able to share knowledge. This way agents can utilise knowledge from other sources.
+</p>
+
+<br/>
+
+<p>
 	Knowledge sharing requires certain conventions: representation language format, agent communication protocol, and knowledge content specification [Gruber 1995]. Knowledge content specification can be achieved by using formal ontologies. Agents can use such an ontology to communicate about a domain without necessarily using the same theory. This is considered commitment to an ontology. Ontologies should adhere to certain design criteria:
 	Clarity — communication of intention should be efficient.<br/>
 	Coherence — all concepts that are defined should be coherent, along with the given axioms.<br/>
@@ -176,13 +224,19 @@ Rogier Knoester
 <br/>
 
 <p>
+	A good example of how structured data can enhance an application is the introduction of enhanced search results.
+</p>
+
+<br/>
+
+<p>
 	Traditionally search results have consisted of small pieces of text and blue links [Haas et al. 2011]. However, the concept of enhanced search results is researched by Haas et al., and whether enhanced search results are something that is preferred by users. In the research, enhanced search results are generated by using and interpreting structured data. An a/b-test evaluation is performed in which the preference of users is analysed by measuring the click-through-rate (CTR). The results show that in the enhanced search results the CTR was on average 15% higher. It is also noted that even though the availability of structured data is low, most search results can be enhanced by at least one type of enhancement (video, reference, product, etc.). Furthermore, the presence of enhancements helps guide users to relevant results.
 </p>
 
 <br/>
 
 <p>
-	Traditionally content on the web was not published structurally. Structured content is becoming more prevalent on the web. It allows for more interactive systems. An application that boosted the use of structured data greatly is text search. In 2011, search engines together created Schema.org, a single vocabulary that can be used by websites to present their data in a structured manner. A sample of 10 billion webpages showed that 31.3% have adopted the Schema.org vocabulary to present structured data [Guha et al. 2016]. It should be noted that there are other formats besides Schema.org, but their vocabularies are limited.<br/>
+	However, traditionally content on the web was not published structurally. Structured content is becoming more prevalent on the web. It allows for more interactive systems. An application that boosted the use of structured data greatly is text search. In 2011, search engines together created Schema.org, a single vocabulary that can be used by websites to present their data in a structured manner. A sample of 10 billion webpages showed that 31.3% have adopted the Schema.org vocabulary to present structured data [Guha et al. 2016]. It should be noted that there are other formats besides Schema.org, but their vocabularies are limited.<br/>
 	Schema.org was designed to make it easier for websites to present data at the cost that consumers of the data have it slightly harder. Schema.org's adoption can be attributed to this strategy. The vocabulary can also be extended, which is regularly done by communities working together to document new terms. Some of these vocabularies might be integrated into the core vocabulary. With this Schema.org tries to be as open as possible so that many stakeholders can participate in the evolvement of the vocabulary.
 </p>
 
@@ -201,7 +255,19 @@ Rogier Knoester
 <br/>
 
 <p>
+	Besides RDF there are other ways to present structured content.
+</p>
+
+<br/>
+
+<p>
 	Data is becoming more central in our lives and is used to make more decisions [Heath and Bizer 2011]. Many entities generating this data are sharing it with others who are then using that data to create new business and platforms. The web is likely the best place for discovering, accessing, integrating, and using this data. To re-use the data it is important that it is well structured. The data is currently often found in structured structures, like HTML, however, the data itself is most often general text without any structure. Microformats have been introduced to annotate the data. However, they are limited in expressing certain relations between data. Web APIs exposing data have been able able to express these relations, but they were not generic and thus required understanding of the API to actually use it properly. Linking the data becomes possible with RDF. RDF makes it possible to define relationships between things. Through RDF linked data it then becomes possible to discover more data, increasing discoverability on the web. Instead of data being locked into one place it is now global, enabling generic applications to use data from all over the web.
+</p>
+
+<br/>
+
+<p>
+	However, the presented shared global data space is not perfect.
 </p>
 
 <br/>
@@ -217,7 +283,8 @@ Rogier Knoester
 
 <h2>KR and Semantic Web projects</h2>
 
-<h4>Producing linked data</h4> 
+<h3>Producing linked data</h3> 
+<br/>
 
 <p>
 	The design of websites is changing due to data mining and knowledge discovery [Kumar et al. 2013]. Usually, web data mining covers 3 domains: text analysis, structure mining, and link analysis. Combined these cover the content of a page, however, the visual presentation is left out. Mining the visual presentation of pages—design mining—can be done using Webzeitgeist. Webzeitgeist is a large-scale store of mineable design data. Webzeitgeist enables multiple professions to answer certain questions relevant for them. Designers, for example, will be able to see what elements are used often. They can then design similar elements to create familiar interfaces for their users. Furthermore, Webzeitgeist enables metric learning, classification of elements, and design-based machine learning. It could perhaps lower the often experienced barrier in data-driven design applications, and help create new types of web design tools.
@@ -230,6 +297,12 @@ Rogier Knoester
 	The knowledge on DBpedia is accessible in multiple ways. Browsers will receive an HTML view of the data, whereas Semantic Web agents will receive RDF descriptions. Furthermore, DBpedia is linked to other data sources that can enhance the knowledge it already has. <br/>
 	DBpedia shows that crowdsourced knowledge can be used to build a knowledge base, providing access to Wikipedia’s content in a structured manner.
 </p>
+
+<p>
+	DBpedia is one initiative, however, there are more.
+</p>
+
+<br/>
 
 <br/>
 
@@ -249,7 +322,7 @@ Rogier Knoester
 	Through all this they hope to create new opportunities in creating, curation, consuming and analysing media.
 </p>
 
-<h4>Consuming linked data</h4>
+<h3>Consuming linked data</h3>
 
 <p>
 	Fire fighting is a tough problem. Issues can arise when trying to reach the location of fires, or dealing with complex situations at those locations. Fire fighters require a lot of information so they can make educated decisions in a short amount of time. An example of such information is information about buildings. A building model can be used for this. A building model contains many properties about the building that are easily accessed. When creating datasets with this information it can grow too large. This can be countered by linking data instead. Linked Data is suitable for this. However, different definitions of terms can make this hard, standards are thus required, a shared vocabulary in this case. Through this data it becomes possible to supply fire fighters with the correct information that they need at a certain moment. For example, a map to the location of a new fire. Fire fighters that have used such a system claimed it was useful. Next steps would be providing fire departments with more data, such as smart smoke detectors, to improve the chances fire fighters have.
