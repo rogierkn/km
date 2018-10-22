@@ -2,34 +2,272 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="https://dokie.li/media/css/lncs.css" />
-<title>Short Paper on Knowledge and Media</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://dokie.li/media/css/lncs.css"/>
+    <title>Short Paper on Knowledge and Media</title>
 </head>
 
 <body>
 
-<h1>Short Paper on Knowledge and Media (replace with your own title)</h1>
+<h1>Making a case for semantically annotated news articles</h1>
 
 <div id="authors">
-Your Name Here
+    Rogier Knoester
 </div>
 
 <div class="counter">
 
 
-<h3>Introduction</h3>
+    <h3>Introduction</h3>
 
-<p>Write your paper here. Use between 1200 and 1500 words (excluding references). See the course information on Canvas for the detailed guidelines and requirements.</p>
+    <p>These days the Semantic Web is becoming more of a reality. Search engines such as Google are using the data found
+       on the Semantic Web to enhance their search results [Haas et al. 2011]. Schema.org, an initiative of companies
+       behind the major search engines, is largely to thank for that. It provides a vocabulary that covers many concepts
+       and is easy to use for content providers [Guha et al. 2016].</p>
+    <p>
+        The domain of newspapers, more specifically news articles, however, seems to not join in on this growth as much
+        as other domains. Newspapers are not adding much data to articles. An odd newspaper adds some JSON+LD to the
+        HTML to describe the metadata of the article but none semantically annotate the actual article.
+    </p>
+    <p>
+        This focus paper tries to make a case for semantically annotating news articles. This is done by describing the
+        current situation, state why annotated articles area good thing, and explain how it can be achieved. Finally the
+        potential disadvantages are given for certain approaches. This allows the reader to draw a conclusion whether or
+        not it is worth it.
+    </p>
 
-<h3>Approach/Analysis/Case Study/...</h3>
+    <h3>Current situation</h3>
 
-<p>...</p>
+    <p>
+        Currently many newspapers do not, or barely employ the practice of linked data in their websites. This section
+        will perform an analysis on a sample of ten newspapers. These ten newspapers represent the larger news outlets
+        that should have more resources to implement newer technologies. A recent topic is selected to make sure that
+        the articles analysed are recent as well, and not outdated with perhaps old or invalid data.
+        The analysis will check whether or not linked data present in the web pages, by using Google’s structured data
+        testing tool, and if the actual article is semantically annotated.
+    </p>
 
 
-<h3>Discussion</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Newspaper</th>
+                <th>Article URL</th>
+                <th>Linked data</th>
+                <th>Annotated article</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Nu.nl
+                </td>
+                <td>
+                    <a href="https://www.nu.nl/buitenland/5523974/saoedi-arabie-journalist-khashoggi-overleden-ruzie-in-consulaat.html">Article</a>
+                </td>
+                <td>Yes, article and extra metadata</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    NRC
+                </td>
+                <td>
+                    <a href="https://www.nrc.nl/nieuws/2018/10/21/dat-khashoggi-omkwam-na-een-gevecht-gelooft-niemand-a2752174">Article</a>
+                </td>
+                <td>Yes, article and extra metadata</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    Economist
+                </td>
+                <td>
+                    <a href="https://www.economist.com/middle-east-and-africa/2018/10/20/saudi-arabia-admits-jamal-khashoggi-is-dead">Article</a>
+                </td>
+                <td>Yes, article and some extra metadata (format not correct)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    The New York Times
+                </td>
+                <td>
+                    <a href="https://www.nytimes.com/2018/10/20/us/politics/saudi-image-campaign-twitter.html">Article</a>
+                </td>
+                <td>Yes, article and much extra metadata</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    The Times
+                </td>
+                <td>
+                    <a href="https://www.thetimes.co.uk/edition/world/saudis-claim-jamal-khashoggis-remains-were-wrapped-in-a-carpet-and-given-to-locals-for-disposal-2l8njb6gw">Article</a>
+                </td>
+                <td>Yes, article and some extra metadata</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    The Washington Post
+                </td>
+                <td>
+                    <a href="https://www.washingtonpost.com/world/middle_east/khashoggis-death-was-a-rogue-operation-that-the-crown-prince-was-not-aware-of-saudi-foreign-minister-says/2018/10/21/97ee4c06-d3d2-11e8-a4db-184311d27129_story.html?utm_term=.3a43a488629d">Article</a>
+                </td>
+                <td>Yes, website related only, not article related</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    Al Jazeera
+                </td>
+                <td>
+                    <a href="https://www.aljazeera.com/news/2018/10/erdogan-turkey-reveal-naked-truth-khashoggi-killing-181021152727536.html">Article</a>
+                </td>
+                <td>Yes, extra metadata</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    BBC
+                </td>
+                <td><a href="https://www.bbc.com/news/world-middle-east-45932697</td>">Article
+                <td>Yes, extra metadata, also on added videos</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    The Guardian
+                </td>
+                <td>
+                    <a href="https://www.theguardian.com/technology/2018/oct/20/silicon-valley-ties-saudi-arabia-scrutiny-jamal-khashoggi">Article</a>
+                </td>
+                <td>Yes, article and much extra metadata, also on related media</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    Volkskrant
+                </td>
+                <td>
+                    <a href="https://www.volkskrant.nl/nieuws-achtergrond/turkse-president-erdogan-onthult-dinsdag-alle-details-over-dood-khashoggi~b8c653ee/">Article</a>
+                </td>
+                <td>Yes, extra metadata</td>
+                <td>No</td>
+            </tr>
 
-<p>...</p>
+        </tbody>
+        <caption><strong>different newspapers and their use of linked data</strong></caption>
+    </table>
+
+
+    <p>
+        The analysis shows, table 1, that all newspapers include some form of linked data. Most of the linked data is
+        used to attach metadata that might be useful for other applications, e.g. search engines listing metadata of
+        articles when certain keywords of a search query match a headline. None of the articles had their content
+        semantically annotated. The content is thus only interpretable by humans. An interesting observation from the
+        analysis is that newspapers produce linked data in the form of metadata, but do not link to already existing
+        data, such as persons mentioned in articles. Links could have been made to knowledge bases such as DBpedia or
+        Wikidata.
+    </p>
+
+
+    <h3>Why semantically annotating articles is useful</h3>
+
+    <p>
+        To make a case for the practice of semantically annotating articles it is necessary to explain why it is useful.
+        Multiple use cases can be created for it. An easy one would be the fact that when articles become annotated
+        newspapers can become knowledge bases themselves. However, it will then also be possible to time-travel through
+        the knowledge base, as content in newspapers is produced constantly. Perhaps this content modifies earlier
+        statements about a topic. This means that for a certain topic a timeline can easily be generated based on the
+        articles’ publishing data.
+
+    </p>
+
+    <p>
+        A second use case would be semantic searching of news. Currently when one is looking for information the
+        searching is mainly done on keywords. If however the search is based on semantics, it could be much more
+        accurate. A search engine could, for example, already extract statements from an article and immediately display
+        them to the user.
+    </p>
+
+    <p>
+        Another, more specific, use case would be in the reporting of events such as elections. During such events a lot
+        of claims are made by people. These claims can either be true or false. If such claims were in articles and
+        annotated as a Claim, other applications could index these claims and ask experts to create a ClaimReview. The
+        original article could then automatically link to these claim reviews to show readers the overall verdict about
+        a claim when they are reading the article. Perhaps when a lot more content and information is available as
+        linked data such claims can even be reviewed automatically, however, it should be visible if done automatically
+        to let the reader know it might not be a 100% correct.
+    </p>
+
+    <h3>Possible approaches</h3>
+
+    <p>The annotating process of articles could be done in multiple ways, each is described shortly.</p>
+
+    <p>Authors annotate their content themselves, this can happen, for example, just before publishing. This does
+       however require that all authors know which concepts exist and how they translate to the content.
+    </p>
+
+
+    <p>
+        A specialist employee annotates all articles. This means authors can focus on their core job and do not need to
+        learn new technology that has no real use to them. This employee has all the knowledge to annotate and can thus
+        create good semantic annotations.
+    </p>
+<br/>
+    <p>
+        Both of the options above can be made easier and more efficient by introducing a controlled natural language.
+        Davis et al. already demonstrated that this is possible, however, their research was in a stricter domain [Davis
+        et al. 2009], where newspaper articles are a rather large and unbound domain.
+    </p>
+
+    <p>
+        A definite requirement is that the annotation process is relatively user friendly. For this a WYSIWYM
+        (What-you-see-is-what-you-mean) editor is useful. Khalili & Auer have designed such an editor where it is
+        possible to author content and immediately annotate it [Khalili & Auer 2013]. Furthermore, it is possible to
+        have a NLP API process the content to annotate parts it understands, this however is not guaranteed to give good
+        results.
+
+    </p>
+
+    <h3>Discussion</h3>
+
+    <p>
+        Although semantically annotating articles is a good idea and actually provides the world with more structured
+        information, it has some issues. Most of these issues are not technical.
+    </p>
+
+    <p>
+        Semantically annotating articles mainly helps others, it does not necessarily benefit the newspaper. A newspaper
+        will have an extra job besides writing the content but they might not actually see, for example, an increase in
+        profit. Instead it might be possible that there are less actual readers because much of the information found in
+        an article is already shown by a search engine that a reader used to find articles. A newspaper thus has no real
+        economical benefit from annotating articles. If a newspaper decides to annotate articles it does so for the
+        greater good.
+        This issue however, can be countered when the cost becomes low. This could be possible in the future when
+        natural language processing becomes advanced enough to be able to interpret and then annotate news articles.
+    </p>
+
+    <p>
+        Another issue is in the domain of copyright. If articles are publicly accessible it still means that there is a
+        copyright on the content of the article, it is not in the public domain. However, indexer are still able to
+        index the annotated content and use it to create other applications. There is no easy solution to this. One way
+        would be that content creators, newspapers in this case, explicitly notify an indexer of content that can be
+        indexed, for example by pushing the URL of an article to an API. This way the newspaper decides whether or not
+        the content is indexed. However, this means that all indexers have to follow the same rules.
+    </p>
+
+    <h3>Conclusion</h3>
+
+    <p>This focus paper has made a case for semantically annotating news articles. It is a useful endeavour and can
+       enhance the information brought forth by news articles. However, certain issues exist. The most important one
+       being that newspapers have no immediate economic benefit from annotating articles. There is no direct solution
+       for this, but perhaps economical incentives, e.g. subsidies, can convince newspapers to start.
+       The author expects that news articles will be annotated in the future, the only question is when.
+    </p>
+
 
 </div>
 
@@ -37,9 +275,17 @@ Your Name Here
 <h3>References</h3>
 
 <ul>
-<li>Replace this with reference 1</li>
-<li>Replace this with reference 2</li>
-<li>...</li>
+    <li>Haas et al. 2011. Enhanced results for web search. In SIGIR '11.</li>
+    <li>Guha, Brickley, and Macbeth. 2016. Schema.org: evolution of structured data on the web. Communications of the
+        ACM 59(2).
+    </li>
+    <li>Davis, Brian, et al. "Controlled natural language for semantic annotation." European Semantic Web Conference.
+        Springer, Berlin, Heidelberg, 2009.
+    </li>
+    <li>
+        Khalili, Ali, and Sören Auer. "Wysiwym authoring of structured content based on schema. org." International
+        Conference on Web Information Systems Engineering. Springer, Berlin, Heidelberg, 2013.
+    </li>
 </ul>
 
 
